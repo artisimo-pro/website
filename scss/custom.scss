@@ -7,6 +7,8 @@ $link-hover-color: darken($link-color, 15%) !default;
 $nav-pills-link-active-bg: lighten($body-bg, 15%) !default;
 $card-border-width: 0 !default;
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
 /* Import Bootstrap */
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
@@ -25,4 +27,20 @@ $card-border-width: 0 !default;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
   }
+}
+
+.topleft {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 50px;
+}
+
+#artisimo {
+  font-family: 'Dancing Script', cursive;
+  color: rgba(255, 0, 255, 0.6);
+}
+
+#pro {
+  color: lighten($body-bg, 15%);
 }

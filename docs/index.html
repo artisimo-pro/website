@@ -14,11 +14,13 @@
     />
     <link rel="stylesheet" href="css/custom.css" />
     <title>Artisimo Pro</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />    
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   </head>
   <body>
 
     <div class="container">
+
+    <h1 class="topleft"><div id="artisimo">Artisimo<div><div id="pro">Pro</div></h1>
 
     <!-- Pill -->
     <ul class="nav nav-pills mb-3">
@@ -39,7 +41,9 @@
       <div id="pets" class="tab-pane fade show active">
           <div class="row align-items-start">
             <div class="col">
-              <div class="card" style="width: 25rem;"><img src="img/pets/c1p1.jpg" class="card-img-top"></div>
+              <div onclick="openFSLightbox('img/pets/c1p1.jpg', 1)" class="card" style="width: 25rem;">
+                <img src="img/pets/c1p1.jpg" class="card-img-top">
+              </div>
               <div class="card" style="width: 25rem;"><img src="img/pets/c1p2.jpg" class="card-img-top"></div>
               <div class="card" style="width: 25rem;"><img src="img/pets/c1p3.jpg" class="card-img-top"></div>
               <div class="card" style="width: 25rem;"><img src="img/pets/c1p4.jpg" class="card-img-top"></div>
@@ -86,7 +90,6 @@
               <div class="card" style="width: 25rem;"><img src="img/interiors/c2p1.jpg" class="card-img-top"></div>
               <div class="card" style="width: 25rem;"><img src="img/interiors/c2p2.jpg" class="card-img-top"></div>
               <div class="card" style="width: 25rem;"><img src="img/interiors/c2p3.jpg" class="card-img-top"></div>
-              <div class="card" style="width: 25rem;"><img src="img/interiors/c2p4.jpg" class="card-img-top"></div>
             </div>
             <div class="col">
               <div class="card" style="width: 25rem;"><img src="img/interiors/c3p1.jpg" class="card-img-top"></div>
@@ -98,6 +101,67 @@
 
     </div>
     </div>
+
+      <!-- FS Lightbox -->
+      <div
+        class="modal fade"
+        id="my-modal-01"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered modal-full"
+          role="document"
+        >
+          <div class="modal-content justify-content-center">
+            <button
+              id="modal-carousel-01-close"
+              type="button"
+              class="close carousel-control-close"
+              onclick="closeFSLightbox()"
+            >
+              <i class="fas fa-times"></i>
+              <span class="sr-only">Close</span>
+            </button>
+
+            <div
+              id="modal-carousel-01"
+              class="carousel slide"
+              data-interval="false"
+            >
+              <div id="modal-carousel-inner" class="carousel-inner"></div>
+
+              <a
+                class="carousel-control-prev"
+                id="modal-carousel-01-prev"
+                href="#modal-carousel-01"
+                role="button"
+                data-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a
+                class="carousel-control-next"
+                id="modal-carousel-01-next"
+                href="#modal-carousel-01"
+                role="button"
+                data-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- Imports -->
     <script

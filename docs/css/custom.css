@@ -11892,4 +11892,17 @@ textarea.form-control-lg {
   color: rgba(38, 38, 38, 0.8);
 }
 
+h4, .h4 {
+  color: rgba(255, 0, 255, 0.6);
+}
+
+.social-apps {
+  position: fixed;
+  top: 15px;
+  z-index: 2;
+  right: 15px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
 /*# sourceMappingURL=custom.css.map */

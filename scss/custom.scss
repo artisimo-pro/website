@@ -44,3 +44,17 @@ $card-border-width: 0 !default;
 #pro {
   color: lighten($body-bg, 15%);
 }
+
+h4 {
+  color: rgba(255, 0, 255, 0.6);
+}
+
+.social-apps {
+  position: fixed;
+  top: 15px;
+  z-index: 2;
+  right: 15px;
+  text-align: center;
+  font-size: 1.5em;
+} 
+

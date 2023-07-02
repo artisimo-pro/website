@@ -18,25 +18,85 @@
   </head>
   <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
-      <div class="container">
-        <h1>Artisimo Pro</h1>
-        <ul class="nav navbar-nav ml-auto"></ul>
-        <button class="btn btn hidden-print" onclick="printPage()"><i class="fas fa-print fa-lg"></i></button>
-      </div>
-    </nav>
-
-    <!-- Content -->
     <div class="container">
 
-      <div class="card" style="width: 18rem;">
-        <img src="img/pets/1.jpg" class="card-img-top">
-        <div class="card-body">
-          <p class="card-text"></p>
-        </div>
+    <!-- Pill -->
+    <ul class="nav nav-pills mb-3">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="pill" href="#pets"></i>Pets</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#weddings">Weddings</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#interiors">Interiors</a>
+      </li>
+    </ul>
+
+    <!-- Pill  Content -->
+    <div class="tab-content">
+
+      <div id="pets" class="tab-pane fade show active">
+          <div class="row align-items-start">
+            <div class="col">
+              <div class="card" style="width: 25rem;"><img src="img/pets/c1p1.jpg" class="card-img-top"></div>
+              <div class="card" style="width: 25rem;"><img src="img/pets/c1p2.jpg" class="card-img-top"></div>
+              <div class="card" style="width: 25rem;"><img src="img/pets/c1p3.jpg" class="card-img-top"></div>
+              <div class="card" style="width: 25rem;"><img src="img/pets/c1p4.jpg" class="card-img-top"></div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 25rem;"><img src="img/pets/c2p1.jpg" class="card-img-top"></div>
+              <div class="card" style="width: 25rem;"><img src="img/pets/c2p2.jpg" class="card-img-top"></div>
+              <div class="card" style="width: 25rem;"><img src="img/pets/c2p3.jpg" class="card-img-top"></div>
+              <div class="card" style="width: 25rem;"><img src="img/pets/c2p4.jpg" class="card-img-top"></div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 25rem;"><img src="img/pets/c3p1.jpg" class="card-img-top"></div>
+              <div class="card" style="width: 25rem;"><img src="img/pets/c3p2.jpg" class="card-img-top"></div>
+              <div class="card" style="width: 25rem;"><img src="img/pets/c3p3.jpg" class="card-img-top"></div>
+            </div>
+          </div>
       </div>
 
+      <div class="tab-pane fade" id="weddings">
+          <div class="row align-items-start">
+            <div class="col">
+              <div class="card" style="width: 25rem;"><img src="img/weddings/c1p1.jpg" class="card-img-top"></div>
+              <div class="card" style="width: 25rem;"><img src="img/weddings/c1p2.jpg" class="card-img-top"></div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 25rem;"><img src="img/weddings/c2p1.jpg" class="card-img-top"></div>
+              <div class="card" style="width: 25rem;"><img src="img/weddings/c2p2.jpg" class="card-img-top"></div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 25rem;"><img src="img/weddings/c3p1.jpg" class="card-img-top"></div>
+            </div>
+          </div>
+      </div>
+
+      <div class="tab-pane fade" id="interiors">
+          <div class="row align-items-start">
+            <div class="col">
+              <div class="card" style="width: 25rem;"><img src="img/interiors/c1p1.jpg" class="card-img-top"></div>
+              <div class="card" style="width: 25rem;"><img src="img/interiors/c1p2.jpg" class="card-img-top"></div>
+              <div class="card" style="width: 25rem;"><img src="img/interiors/c1p3.jpg" class="card-img-top"></div>
+              <div class="card" style="width: 25rem;"><img src="img/interiors/c1p4.jpg" class="card-img-top"></div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 25rem;"><img src="img/interiors/c2p1.jpg" class="card-img-top"></div>
+              <div class="card" style="width: 25rem;"><img src="img/interiors/c2p2.jpg" class="card-img-top"></div>
+              <div class="card" style="width: 25rem;"><img src="img/interiors/c2p3.jpg" class="card-img-top"></div>
+              <div class="card" style="width: 25rem;"><img src="img/interiors/c2p4.jpg" class="card-img-top"></div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 25rem;"><img src="img/interiors/c3p1.jpg" class="card-img-top"></div>
+              <div class="card" style="width: 25rem;"><img src="img/interiors/c3p2.jpg" class="card-img-top"></div>
+              <div class="card" style="width: 25rem;"><img src="img/interiors/c3p3.jpg" class="card-img-top"></div>
+            </div>
+          </div>
+      </div>
+
+    </div>
     </div>
 
     <!-- Imports -->

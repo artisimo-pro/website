@@ -2,6 +2,7 @@ all: clean html
 
 .PHONY: deps
 deps:
+	brew install sass/sass/sass
 	npm install bootstrap
 
 .PHONY: clean-deps
@@ -9,9 +10,6 @@ clean-deps:
 	rm -rf node_modules \
 		package.json \
 		package-lock.json
-
-
-
 
 .PHONY: clean
 clean:
@@ -22,9 +20,9 @@ clean:
 
 .PHONY: html
 html: css
-	cp index.html html/
+	cp html/index.html docs/index.html
 
 .PHONY: css
 css:
-	mkdir -p html/css
-	sass scss/custom.scss html/css/custom.css
+	mkdir -p docs/css
+	sass scss/custom.scss docs/css/custom.css
